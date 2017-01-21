@@ -1,0 +1,13 @@
+<h1>Addition calculator</h1>
+<p>This is a demo using Rails to do processing without storing data in DB</p>
+
+<%= form_for @calculation, :url => calculator_calculate_path , :html => { :method => :post } do |f| %>
+  <%= f.label :num1 %>:
+  <%= f.number_field :num1 %><br />
+
+  <%= f.label :num2 %>:
+  <%= f.number_field :num2 %><br />
+
+  <%= f.submit %>
+
+<% end %>

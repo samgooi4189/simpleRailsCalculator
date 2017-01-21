@@ -1,0 +1,8 @@
+<h1>Result</h1>
+<% if @error.nil? %>
+  <p>The answer is <%= flash[:result]%> </p>
+<% else%>
+  <p><%= @error %></p>
+<% end %>
+
+<%= link_to "back", calculator_welcome_path %>
